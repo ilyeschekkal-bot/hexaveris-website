@@ -34,9 +34,10 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
   background: #00d2ffff;
   color:#050a15;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.5);
 }
 
 header {
