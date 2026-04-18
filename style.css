@@ -36,6 +36,7 @@ body {
 .card:hover {
   transform: scale(1.05);
   background: #00d2ffff;
+  color:#050a15;
 }
 
 header {
