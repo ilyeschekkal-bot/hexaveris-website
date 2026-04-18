@@ -14,7 +14,19 @@ body {
 }
 
 .card {
+  background: #1A1A22;
+  padding: 20px;
+  border-radius: 10px;
+
+  text-decoration: none; /* supprime underline */
+  color: white; /* couleur texte */
+
+  font-weight: 500;
+  font-size: 16px;
+
+  display: block; /* important pour que toute la carte soit cliquable */
   cursor: pointer;
+
   transition: 0.3s;
 }
 
