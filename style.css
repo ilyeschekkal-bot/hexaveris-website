@@ -13,6 +13,16 @@ body {
   color: #00d2ffff;
 }
 
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #7C3AED;
+}
+
 header {
   display: flex;
   justify-content: space-between;
