@@ -66,6 +66,7 @@ header {
 .hero {
   text-align: center;
   padding: 100px 20px;
+  background: radial-gradient(circle at center, rgba(124,58,237,0.2), transparent);
 }
 
 h1 {
