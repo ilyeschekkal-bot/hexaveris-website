@@ -35,7 +35,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  background: #00d2ffff;
+  background: linear-gradient(135deg, #7C3AED, #00D2FF);;
   color:#050a15;
   box-shadow: 0 10px 25px rgba(255, 255, 255, 100);
 }
