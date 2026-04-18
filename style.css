@@ -106,6 +106,7 @@ h1 {
 .btn:hover {
   transform: translateY(-3px); /* Le bouton monte un peu */
   box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3); /* Lueur bleue */
+  color:Black; 
 }
 
 
