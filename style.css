@@ -89,12 +89,25 @@ h1 {
 }
 
 .btn {
-  background: #7C3AED;
-  padding: 12px 24px;
-  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 14px 32px;
+  /* Ton dégradé IT */
+  background: linear-gradient(90deg, #003a8c 0%, #00d2ff 100%);
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px; /* Forme pilule plus moderne */
+  transition: transform 0.3s, box-shadow 0.3s; /* Pour l'effet au survol */
+  border: none;
 }
+
+/* Effet quand on passe la souris dessus */
+.btn:hover {
+  transform: translateY(-3px); /* Le bouton monte un peu */
+  box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3); /* Lueur bleue */
+}
+
 
 section {
   padding: 60px 20px;
