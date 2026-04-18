@@ -11,6 +11,22 @@ header {
   padding: 20px 40px;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  height: 40px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .hero {
   text-align: center;
   padding: 100px 20px;
