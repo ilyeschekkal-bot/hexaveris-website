@@ -41,11 +41,18 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-   align-items: center;
   padding: 20px 40px;
+  display: flex;
+  justify-content: flex-start; /* Aligne tout à gauche */
+  align-items: center;        /* Aligne verticalement au centre */
+  gap: 15px;                  /* Espace entre le logo et le texte */
+  position: absolute;         /* Pour qu'il reste bien en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 .logo-container {
   display: flex;
