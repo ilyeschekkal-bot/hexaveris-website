@@ -7,7 +7,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: white;
-  /*background: url('hero.png');*/
+  background: url('hero.png');
+  background-size: cover; /* Couvre tout l'écran */
+  background-position: center;
+  background-attachment: fixed; /* L'image reste fixe au scroll */
+  background-repeat: no-repeat;
 }
 
 /* HEADER */
@@ -42,7 +46,7 @@ header {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("hero.jpg") center/cover no-repeat;
+  /*background: url("hero.jpg") center/cover no-repeat;*/
   display: flex;
   align-items: center;
   padding-left: 80px;
