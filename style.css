@@ -8,10 +8,11 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   background: url('hero.png');
-  background-size: cover; /* Couvre tout l'écran */
-  background-position: center;
+  background-size: contain; /* L'image s'affiche en entier sans être coupée */
+  background-position: center top; /* Aligné en haut au centre */
   background-attachment: fixed; /* L'image reste fixe au scroll */
   background-repeat: no-repeat;
+  background-color: #050a15; /* Ajoute la couleur sombre pour remplir le vide si l'image est trop petite */
 }
 
 /* HEADER */
