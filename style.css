@@ -7,7 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: white;
-  background: #050a15;
+  background: url('hero.png');
 }
 
 /* HEADER */
@@ -42,7 +42,7 @@ header {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("hero-bg.jpg") center/cover no-repeat;
+  background: url("hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   padding-left: 80px;
