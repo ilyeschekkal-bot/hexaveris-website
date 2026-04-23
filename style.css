@@ -7,16 +7,28 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* S'assure que le body fait toute la hauteur */
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: white;
+  background-color: #050a15; /* Important : utilise la couleur dominante de ton image */
   background-image: url('hero.png');
-  background-size: 100% 100%; /* Force l'image à faire pile 100% de large ET de haut */
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover; /* Garde les proportions sans étirer */
+  background-position: center center;
   background-attachment: fixed;
-  filter: brightness(0.7) contrast(1.2); /* Rend plus sombre et plus intense */
+  background-repeat: no-repeat;
 }
+
+@media(max-width: 900px) {
+  body {
+    background-position: 70% center; /* Décale l'image pour mieux voir le graphisme sur mobile */
+    background-attachment: scroll; /* Meilleure performance sur Android */
+  }
+  
+  .hero {
+    padding: 100px 20px 20px 20px; /* Donne de l'espace en haut pour le logo */
+  }
+}
+
 
 
 /* HEADER */
