@@ -152,9 +152,10 @@ nav {
 }
 
 .hero-image img {
-    max-width: 120%; /* Pour donner cet effet de grandeur */
+    max-width: 90%; /* effet de grandeur */
     height: auto;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 20px; /* Arrondit un peu les bords pour un look moderne */
 }
 
 /* TRUST BAR */
