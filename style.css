@@ -15,11 +15,12 @@ body {
   min-height: 80vh; /* Prend 80% de la hauteur de l'écran */
   
   /* L'image style "Couverture Facebook" */
-  background-image: url('hero.png');
+  /*background-image: url('hero.png');
   background-size: cover;      /* Remplissage parfait sans déformation */
-  background-position: center; /* Centré */
-  background-repeat: no-repeat;
-
+  /*background-position: center; /* Centré 
+  background-repeat: no-repeat;   
+  */
+  
   display: flex;
   align-items: center;
   padding: 0 60px;
