@@ -1,166 +1,155 @@
-/* 1. Reset et Base */
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   color: white;
-  background: linear-gradient(135deg, #001529 0%, #003a8c 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre tout le contenu horizontalement */
-  overflow-x: hidden;
+  background: #050a15;
 }
 
-/* 2. Image de fond fixe */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-image: url('https://www.shutterstock.com/image-vector/abstract-cloud-technology-circuit-board-600nw-2703927727.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3; /* Un peu plus bas pour mieux lire le texte */
-  z-index: -1;
-}
+/* HEADER */
 
-/* 3. Header (Logo en haut à gauche) */
 header {
-  width: 100%;
-  padding: 20px 40px;
   display: flex;
-  justify-content: flex-start;
-  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo-container img {
-  height: 45px;
+  height: 40px;
 }
 
 .brand-name {
-  font-size: 22px;
   font-weight: 600;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, #00d2ff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-/* 4. Sections et Layout */
-section {
-  width: 100%;
-  max-width: 1000px;
-  padding: 60px 20px;
-  text-align: center;
-  box-sizing: border-box;
-  animation: fadeIn 1s ease;
-}
+/* HERO */
 
 .hero {
   position: relative;
   height: 100vh;
-
-  background: url("hero.jpg") center/cover no-repeat;
-
+  background: url("assets/hero-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 80px;
 }
 
-.hero-overlay {
+/* OVERLAY */
+
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-
   background: linear-gradient(
-    rgba(5,10,21,0.8),
-    rgba(5,10,21,0.9)
+    to right,
+    rgba(5,10,21,0.95),
+    rgba(5,10,21,0.6),
+    transparent
   );
 }
 
+/* CONTENT */
+
 .hero-content {
   position: relative;
-  text-align: center;
-  max-width: 700px;
-  padding: 20px;
+  max-width: 600px;
 }
 
+/* TITLE */
+
 .hero h1 {
-  font-size: 48px;
+  font-size: 52px;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
+.hero h1 span {
+  background: linear-gradient(135deg, #7C3AED, #00D2FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXT */
+
 .hero p {
-  font-size: 18px;
   opacity: 0.8;
   margin-bottom: 30px;
 }
 
-  
+/* CARDS */
 
-h1 { font-size: 42px; margin-bottom: 20px; }
-h2 { font-size: 28px; margin-bottom: 30px; color: #00d2ff; }
-
-/* 5. Grille et Cartes */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+.services {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .card {
-  background: rgba(26, 26, 34, 0.7);
-  padding: 30px 20px;
-  border-radius: 15px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
+  background: rgba(255,255,255,0.05);
+  padding: 15px 20px;
+  border-radius: 10px;
   transition: 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  background: linear-gradient(135deg, #003a8c, #00d2ff);
-  color: #050a15;
-  box-shadow: 0 10px 30px rgba(0, 210, 255, 0.4);
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #7C3AED, #00D2FF);
 }
 
-/* 6. Boutons */
+/* BUTTON */
+
 .btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 12px 25px;
   background: linear-gradient(135deg, #7C3AED, #00D2FF);
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 8px;
+  text-decoration: none;
+  color: white;
   transition: 0.3s;
-  box-shadow: 0 0 20px rgba(124,58,237,0.5);
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 210, 255, 0.5);
-  filter: brightness(1.1);
-  Color: Black;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.big {
+  padding: 14px 30px;
 }
 
-footer { padding: 50px; color: white; font-size: 14px; }
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+
+  .hero {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+}
