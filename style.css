@@ -15,6 +15,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  filter: brightness(0.7) contrast(1.2); /* Rend plus sombre et plus intense */
 }
 
 
