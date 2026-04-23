@@ -5,17 +5,33 @@
 }
 
 body {
+  background-color: #050a15; /* Un fond sombre uni et propre */
   margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  background-color: #050a15; /* Important : utilise la couleur dominante de ton image */
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 80vh; /* Prend 80% de la hauteur de l'écran */
+  
+  /* L'image style "Couverture Facebook" */
   background-image: url('hero.png');
-  background-size: cover; /* Garde les proportions sans étirer */
-  background-position: center center;
-  background-attachment: fixed;
+  background-size: cover;      /* Remplissage parfait sans déformation */
+  background-position: center; /* Centré */
   background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+/* Ajustement pour Mobile (Android) */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 60vh; /* Un peu moins haut sur mobile pour plus de confort */
+    padding: 20px;
+    background-position: center; /* L'image restera centrée sur le sujet */
+  }
 }
 
 @media(max-width: 900px) {
