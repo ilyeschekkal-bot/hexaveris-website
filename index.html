@@ -1,77 +1,218 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HEXAVERIS - Web, Marketing, AI Solutions">
+    <meta name="keywords" content="web design, marketing, automation, AI business">
     <title>HEXAVERIS | Digital Solutions</title>
-    <link rel="icon" type="image/png" href="HEXAVERISSModerneLogoWebSite.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Pictures/HEXAVERISSModerneLogoWebSite.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <div class="logo-container">
-        <img src="HEXAVERISSModerneLogoWebSite.png" alt="Logo">
-        <span class="brand-name">HEXAVERIS</span>
-    </div>
-    <nav>
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Services</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
-        <a href="https://wa.me" class="btn small">Get Started</a>
-    </nav>
-</header>
-
-<main class="hero">
-    <div class="hero-content">
-        <h1>
-            We Build <span>Websites</span>,<br>
-            Grow <span>Brands</span> &<br>
-            Automate Business
-        </h1>
-        <p class="subtitle">Web Design · Marketing · Automation · AI Solutions</p>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="icon">🌐</div>
-                <h3>Web Design</h3>
-                <p>Modern, responsive and fast websites</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">📊</div>
-                <h3>Marketing</h3>
-                <p>Strategies that bring real results</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">⚙️</div>
-                <h3>Automation</h3>
-                <p>Save time, reduce manual work</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">🤖</div>
-                <h3>AI Solutions</h3>
-                <p>Smart solutions for your business</p>
-            </div>
+    <header>
+        <div class="logo-container">
+            <img src="Pictures/HEXAVERISSModerneLogoWebSite.png" alt="Logo">
+            <span class="brand-name">HEXAVERIS™</span>
         </div>
 
-        <a class="btn big" href="https://wa.me">
-            Let’s Grow Together →
-        </a>
+        <nav>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+            <a href="https://wa.me" class="btn small">Get Started</a>
+        </nav>
 
-        <div class="trust-bar">
-            <span>🛡️ Trusted Partner</span>
-            <span>⚡ Fast Delivery</span>
-            <span>📈 Results Driven</span>
+        <div class="lang-switch">
+    <button onclick="changeLang('fr')">FR</button>
+    <span>|</span>
+    <button onclick="changeLang('en')">EN</button>
+</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+Get More <span>Clients</span><br>
+With a <span>Smart Website</span><br>
+& Automation
+</h1>
+
+<p class="subtitle">
+We help Algerian businesses grow faster using websites, marketing & AI.
+</p>
+                
+                <a class="btn big" href="https://wa.me/213659025785?text=Bonjour%20HEXAVERIS%2C%20je%20veux%20plus%20d%27informations">
+                    Let’s Grow Together →
+                </a>
+
+                <div class="trust-bar">
+                    <span>🛡️ Trusted Partner</span>
+                    <span>⚡ Fast Delivery</span>
+                    <span>📈 Results Driven</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="Pictures/hero.png" alt="Branding Showcase">
+            </div>
+        </section>
+
+        <section class="problems">
+
+            <h2>Why Your Business Is Not Growing</h2>
+
+            <ul>
+            <li>No professional website</li>
+            <li>No online visibility</li>
+            <li>No marketing strategy</li>
+            <li>Slow response to clients</li>
+            </ul>
+
+        </section>
+
+        <section class="services-container">
+            <div class="services-grid">
+                <a href="web.html" class="service-card">
+                    <div class="icon">
+                        <img src="Pictures/Web_Cloud.png" class="service-icon">
+                    </div>
+                    <h3>Web & Cloud</h3>
+                    <p>Modern websites that build your credibility and attract clients</p>
+                </a>
+
+                <a href="marketing.html" class="service-card">
+                    <div class="icon">
+                        <img src="Pictures/Marketing_Ads.png" alt="Marketing Icon" class="service-icon">
+                    </div>
+                    <h3>Marketing</h3>
+                    <p>Get more clients with targeted campaigns and smart strategies</p>
+                </a>
+
+               <a href="automation.html" class="service-card">
+<div class="icon">
+<img src="Pictures/Automation_Solutions.png" class="service-icon">
+</div>
+<h3>Automation & AI</h3>
+<p>Automate your business and save time using smart systems</p>
+</a>
+
+                <!-- <a href="ai.html" class="service-card">
+                    <div class="icon">
+                        <img src="Pictures/AI_Solution.png" alt="AI Icon" class="service-icon">
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Smart solutions to improve efficiency</p>
+                </a> -->
+
+                <a href="support.html" class="service-card">
+                    <div class="icon">
+                        <img src="Pictures/Tech_Support.png" alt="Support Icon" class="service-icon">
+                    </div>
+                    <h3>Tech Support</h3>
+                    <p>Fix issues fast and keep systems running</p>
+                </a>
+            </div>
+        </section>
+
+       <section class="cta-final">
+
+            <h2>Ready to Grow Your Business?</h2>
+
+            <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+
+            <a href="https://wa.me/213659025785?text=Bonjour%20HEXAVERIS%2C%20je%20veux%20commencer%20mon%20projet" class="btn big">
+            Start My Project
+            </a>
+
+            <a href="https://wa.me/213659025785?text=Bonjour%20HEXAVERIS%2C%20je%20souhaite%20un%20devis%20gratuit" class="btn big" style="background:transparent; border:1px solid #00d2ff;">
+            Get Free Quote
+            </a>
+
+            </div>
+        <p style="font-size:12px; opacity:0.6;">✔ Quick response • ✔ Free quote • ✔ No obligation</p>
+
+        </section>
+
+
+        <section class="pricing">
+            <h2>Our Packages</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <p class="price">$99</p>
+                    <ul>
+                        <li>1 Page Website</li>
+                        <li>Basic Design</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                    <button class="btn small" onclick="selectPlan('Starter', 99)">Choose</button>
+                </div>
+
+                <div class="price-card popular">
+                    <h3>Pro</h3>
+                    <p class="price">$299</p>
+                    <ul>
+                        <li>Multi Pages</li>
+                        <li>SEO Optimized</li>
+                        <li>Marketing</li>
+                    </ul>
+                    <button class="btn small" onclick="selectPlan('Pro', 299)">Choose</button>
+                </div>
+
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <p class="price">$599</p>
+                    <ul>
+                        <li>Full Automation</li>
+                        <li>AI Integration</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="btn small" onclick="selectPlan('Premium', 599)">Choose</button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- <section class="portfolio">
+            <h2>Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="project">
+                    <img src="Pictures/project1.jpg" alt="Project 1">
+                    <p>E-commerce Website</p>
+                </div>
+                <div class="project">
+                    <img src="Pictures/project2.jpg" alt="Project 2">
+                    <p>Marketing Campaign</p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Pictures/HEXAVERISSModerneLogoWebSite.png" alt="Logo footer">
+                <span>HEXAVERIS™</span>
+            </div>
+            <p class="copyright">
+                © 2026. All rights reserved. <br>
+                Designed & Developed by I.CHEKKAL
+            </p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <!-- C'est ici que ton image "Hero" sera placée -->
-    <div class="hero-image">
-        <img src="hero.png" alt="Branding Showcase">
-    </div>
-</main>
-
+    <script src="JS/document.js"></script>
 </body>
 </html>
