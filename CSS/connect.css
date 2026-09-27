@@ -1,1 +1,240 @@
+/* =========================================================
+   HEXAVERIS™ — CONNECT PAGE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #050a15;
+    --card: rgba(10, 18, 32, 0.92);
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #ffffff;
+    --muted: #8f9bad;
+    --accent: #00d2ff;
+    --accent-dark: #003a8c;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(0, 210, 255, 0.12),
+            transparent 35%
+        ),
+        var(--bg);
+}
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.connect-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.connect-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 24px 25px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(0, 210, 255, 0.04);
+
+    backdrop-filter: blur(18px);
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.brand {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand img {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.brand h1 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brand p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.connect-button {
+    width: 100%;
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.connect-button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 210, 255, 0.35);
+    background: rgba(0, 210, 255, 0.06);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.08);
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.connect-button.primary {
+    margin-bottom: 12px;
+
+    background: linear-gradient(
+        135deg,
+        var(--accent),
+        var(--accent-dark)
+    );
+
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.18);
+}
+
+.connect-button.primary:hover {
+    background: linear-gradient(
+        135deg,
+        #18d8ff,
+        #0049a8
+    );
+
+    box-shadow: 0 12px 35px rgba(0, 210, 255, 0.25);
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.icon {
+    width: 25px;
+    min-width: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+}
+
+footer span {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+footer small {
+    display: block;
+    margin-top: 7px;
+
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .connect-page {
+        padding: 20px 12px;
+    }
+
+    .connect-card {
+        padding: 30px 18px 22px;
+        border-radius: 20px;
+    }
+
+    .brand img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .brand h1 {
+        font-size: 23px;
+    }
+
+    .connect-button {
+        min-height: 55px;
+    }
+}
 
