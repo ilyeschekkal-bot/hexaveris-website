@@ -29,7 +29,7 @@ Je souhaite développer mon business.
 
 Pouvez-vous me conseiller ?`;
 
-let url = "https://wa.me/213659025785?text=" + encodeURIComponent(message);
+let url = "https://wa.me/213564698868?text=" + encodeURIComponent(message);
 
 window.open(url, "_blank");
 });
@@ -47,6 +47,6 @@ Je suis intéressé par le pack ${plan} (${price}).
 
 Pouvez-vous me guider pour commencer ?`;
 
-let url = "https://wa.me/213659025785?text=" + encodeURIComponent(message);
+let url = "https://wa.me/213564698868?text=" + encodeURIComponent(message);
 window.open(url, "_blank");
 }
