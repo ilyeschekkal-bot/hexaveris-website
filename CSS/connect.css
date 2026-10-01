@@ -169,15 +169,10 @@ body {
    ========================================================= */
 
 .icon {
-    width: 25px;
-    min-width: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 19px;
-    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 /* =========================================================
