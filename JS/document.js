@@ -50,3 +50,38 @@ Pouvez-vous me guider pour commencer ?`;
 let url = "https://wa.me/213564698868?text=" + encodeURIComponent(message);
 window.open(url, "_blank");
 }
+
+
+/* HEXAVERIS — Mobile Navigation */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("#main-nav");
+
+    if (!menuToggle || !nav) return;
+
+    function closeMenu() {
+        nav.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+    }
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("active");
+
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Fermer le menu" : "Ouvrir le menu"
+        );
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") closeMenu();
+    });
+});
+
